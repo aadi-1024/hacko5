@@ -16,7 +16,7 @@ while True:
     if d != '0':
         for (x, y, w, h) in faces:
             cv2.rectangle(img, (x, y), (x+w, y+h), (0, 0, 255), 2)
-            cv2.putText(img, f'Face detected', (x, y-8), color=(0, 0, 255), fontFace=cv2.FONT_HERSHEY_DUPLEX, fontScale=1)
+            cv2.putText(img, f'intrusion detected', (x, y-8), color=(0, 0, 255), fontFace=cv2.FONT_HERSHEY_DUPLEX, fontScale=1)
     cv2.imshow('img', img)
     k = cv2.waitKey(30) & 0xff
     if k==27:
